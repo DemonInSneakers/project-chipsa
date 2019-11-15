@@ -2,7 +2,6 @@
     <div class="preloader">
         <div class="line"></div>
     </div>
-
 </template>
 
 <script>

@@ -1,30 +1,28 @@
 <template>
    <PageWrap>
        <div class="page">
-           <div class="left">
-               <p class="title">
-						<span>Из Китая в<br>
-						Россию</span>
-                   <br>
-                   доставка<br>
-                   любых грузов<br>
-                   под ключ
-               </p>
+           <h1 class="title">
+                    <span>Из Китая в<br>
+                    Россию</span>
+               <br>
+               доставка<br>
+               любых грузов<br>
+               под ключ
+           </h1>
 
-               <p class="descr">
-                   от 45 кг до целого<br>
-                   контейнера
-               </p>
+           <p class="optional">
+               Компания PACIFIC ASIA GROUP с 2007 года предоставляет качественный сервис по доставке грузов из Китая.
+           </p>
 
-               <ButtonBasic ButtonType="white">Оставить заявку</ButtonBasic>
+           <ButtonShift class="button-play" label="Смотреть видео"><IconPlay /></ButtonShift>
 
-           </div>
-           <div class="right">
-               <p class="optional">
-                   Компания PACIFIC ASIA GROUP с 2007 года предоставляет качественный сервис по доставке грузов из Китая.
-               </p>
-               <ButtonShift link="http://localhost:8080/" label="Смотреть видео" type="play"><IconPlay /></ButtonShift>
-           </div>
+           <p class="descr">
+               от 45 кг до целого<br>
+               контейнера
+           </p>
+
+           <ButtonBasic class="button-request" type="white">Оставить заявку</ButtonBasic>
+
        </div>
    </PageWrap>
 </template>
@@ -42,46 +40,77 @@
 
 <style lang="sass" scoped>
     .page
-        display: flex
+        display: grid
+        grid-template-rows: auto auto 1fr auto
+        grid-template-columns: 1fr 280px
+        grid-gap: 3vh
         width: 50%
         height: 100%
         padding: 55px 0
         @media (max-width: 1366px)
             width: 100%
         @media (max-width: 768px)
+            grid-template-columns: 1fr 1fr
             padding: 20px 0
-        .left
-            display: flex
-            justify-content: space-between
-            flex-direction: column
-            height: 100%
-            .title
-                line-height: 88%
-                color: #f2f5fa
-                /*@media (max-width: 1366px)*/
-                /*    font-size: 3em*/
-                /*@media (max-width: 1024px)*/
-                /*    font-size: 2.5em*/
-                @media (max-width: 768px)
-                    font-size: 2.5em
-                font-size: 7vh
-                span
-                    color: #616972
-        .right
-            display: flex
-            flex-direction: column
-            width: 260px
-            margin-left: auto
+        @media (max-height: 700px)
+            padding: 20px 0
+
+        .title
+            grid-row-start: 1
+            grid-column-start: 1
+            grid-row-end: 3
+            grid-column-end: 2
+            line-height: 88%
+            color: #f2f5fa
+            @media (max-width: 768px)
+                grid-column-end: 3
+
+            font-size: 7vh
+            span
+                color: #616972
+
+        .descr
+            grid-row-start: 3
+            grid-column-start: 1
+            grid-row-end: 4
+            grid-column-end: 2
+            color: #818992
+            font-size: 3vh
+            margin-bottom: auto
+
+        .optional
+            grid-row-start: 1
+            grid-column-start: 2
+            grid-row-end: 2
+            grid-column-end: 3
+            font-size: 1.1em
+            color: #818992
+            font-weight: 300
+            line-height: 1.5
             @media (max-width: 1366px)
-                justify-content: flex-end
-            .optional
-                font-size: 1.1em
-                color: #818992
-                font-weight: 300
-                line-height: 1.5
-                margin-bottom: 20px
-                @media (max-width: 768px)
-                    line-height: 1.1
+                grid-row-start: 1
+                grid-row-end: 4
+                margin-top: auto
+            @media (max-width: 768px)
+                display: none
+            @media (max-height: 550px)
+                font-size: 3vh
+
+        .button-request
+            grid-row-start: 4
+            grid-column-start: 1
+            grid-row-end: 5
+            grid-column-end: 2
+
+        .button-play
+            grid-row-start: 2
+            grid-column-start: 2
+            grid-row-end: 3
+            grid-column-end: 3
+            margin-right: auto
+            @media (max-width: 1366px)
+                grid-row-start: 4
+                grid-row-end: 5
 
 
 </style>

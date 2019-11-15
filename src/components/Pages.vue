@@ -59,6 +59,7 @@
         margin-right: auto;
     }
     .swiper-slide {
+        overflow: hidden;
         color: #fff;
     }
 </style>

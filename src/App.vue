@@ -15,6 +15,7 @@ import Pages from "@/components/Pages"
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'reset-css/reset.css'
+import './styles/reset-button.css'
 import './fonts/Roboto.css'
 import './fonts/Tinos.css'
 

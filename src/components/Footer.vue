@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <div class="footer">
-            <p class="scroll-down" id="downScrollText">Листайте вниз</p>
-            <p class="down-arrow" id="downScrollArrow" style="transform: rotate(0deg);"></p>
-            <div class="social" v-if="$mq.phone">
-                <a :href="LinkFacebook"><IconFacebook /></a>
-                <a :href="LinkTwitter"><IconTwitter /></a>
-            </div>
+    <footer class="footer">
+        <p class="scroll-down" id="downScrollText">Листайте вниз</p>
+        <p class="down-arrow" id="downScrollArrow" style="transform: rotate(0deg);"></p>
+        <div class="social" v-if="$mq.phone">
+            <a :href="LinkFacebook"><IconFacebook /></a>
+            <a :href="LinkTwitter"><IconTwitter /></a>
         </div>
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -29,6 +27,7 @@
 <style lang="sass" scoped>
     .footer
         display: flex
+        flex: 0 0 auto
         box-sizing: border-box
         width: 100%
         height: 114px

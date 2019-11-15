@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <ul class="menu">
-            <li class="menu__item"><a href="/price/">Стоимость</a></li>
-            <li class="menu__item"><a href="/delivery/">Доставка из Китая</a></li>
-            <li class="menu__item"><a href="/contacts/">Контакты</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="menu__item"><a href="/price/">Стоимость</a></li>
+        <li class="menu__item"><a href="/delivery/">Доставка из Китая</a></li>
+        <li class="menu__item"><a href="/contacts/">Контакты</a></li>
+    </ul>
 </template>
 
 <script>
@@ -18,6 +16,7 @@
     .menu
         font-family: 'Tinos'
         display: flex
+        flex: 0 0 auto
         list-style: none
         transition: opacity .5s ease
         opacity: 1

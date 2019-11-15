@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <a class="hamburger">
-            <span></span>
-            <span></span>
-        </a>
-    </div>
+    <a class="hamburger">
+        <span></span>
+        <span></span>
+    </a>
 </template>
 
 <script>
@@ -18,6 +16,7 @@
         outline: none
         position: relative
         display: block
+        flex: 0 0 auto
         width: 40px
         height: 40px
         cursor: pointer
@@ -25,11 +24,14 @@
         background-color: rgba(242, 245, 250, 1)
         border: 1px solid rgba(151, 151, 151, 0)
         border-radius: 50%
-        &:hover
-            background-color: rgba(242, 245, 250, .5)
+        @media (min-width: 768px)
+            &:hover
+                background-color: rgba(242, 245, 250, .5)
         @media (max-width: 768px)
-            width: 30px;
-            height: 30px;
+            width: 30px
+            height: 30px
+            &:active
+                background-color: rgba(242, 245, 250, .5)
         span
             position: absolute
             top: 38%

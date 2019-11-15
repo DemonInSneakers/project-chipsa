@@ -12,6 +12,7 @@
 
 <style lang="sass" scoped>
     .page-wrap
+        flex: 0 0 auto
         box-sizing: border-box
         width: 100%
         height: 100%
