@@ -60,12 +60,14 @@
             grid-column-start: 1
             grid-row-end: 3
             grid-column-end: 2
-            line-height: 88%
+            font-size: 7vh
             color: #f2f5fa
+            line-height: 88%
             @media (max-width: 768px)
                 grid-column-end: 3
+                font-size: 6vh
 
-            font-size: 7vh
+
             span
                 color: #616972
 
@@ -74,9 +76,11 @@
             grid-column-start: 1
             grid-row-end: 4
             grid-column-end: 2
-            color: #818992
-            font-size: 3vh
             margin-bottom: auto
+            font-size: 3vh
+            color: #818992
+            @media (max-width: 768px)
+                font-size: 2.5vh
 
         .optional
             grid-row-start: 1

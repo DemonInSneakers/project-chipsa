@@ -14,7 +14,7 @@
 <script>
     import Swiper from 'swiper'
     import 'swiper/css/swiper.css'
-    import 'swiper/js/swiper.js'
+    // import 'swiper/js/swiper.js'
     import Layout from '@/components/Layout';
     import Page1 from "@/components/Page1";
     import Page2 from "@/components/Page2";
@@ -38,10 +38,6 @@
                     slidesPerView: 1,
                     spaceBetween: 0,
                     mousewheel: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
                 })
                 mySwiper.init()
             }
