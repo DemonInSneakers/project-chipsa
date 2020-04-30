@@ -12,7 +12,7 @@
     "bootstrap-vue": "^2.0.4",
     "core-js": "^2.6.5",
     "fibers": "^4.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.0",
     "reset-css": "^5.0.1",
     "sass": "^1.23.3",
