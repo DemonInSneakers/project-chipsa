@@ -18,7 +18,7 @@
     "sass": "^1.23.3",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "swiper": "^5.1.0",
+    "swiper": "^6.5.1",
     "vue": "^2.6.10",
     "vue-match-media": "^1.0.3",
     "vue-swiper": "^0.5.0"
